@@ -1,0 +1,74 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('shape2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ol li {
+    margin: 20px 0;
+}
+
+ol li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px; /* Increase the font size */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+ol li a img {
+    margin-left: 20px;
+    width: 48px; /* Increase the icon size */
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+ol li a:hover {
+    color: #ff6347;
+}
+
+ol li a:hover img {
+    transform: scale(1.2);
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 600px) {
+    ol li a {
+        font-size: 28px; /* Slightly smaller font size for mobile */
+    }
+
+    ol li a img {
+        width: 36px; /* Slightly smaller icon size for mobile */
+        height: 36px;
+    }
+}
